@@ -1,5 +1,5 @@
 # How to Deploy this App
-*The purpose of this repository is to provide a base Spring Boot Java 8 project and guides to set up **Sonar Cloud** and an **AWS CodePipeline** to facilitate CI/CD.*
+*The purpose of this repository is to provide a base Spring Boot Java 8 project and guides to set up **Sonar Cloud** and an **AWS CodePipeline** to facilitate CI/CD.  You can emulate these same steps to analyze and deploy your own application.*
 
 <br>
 
