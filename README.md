@@ -9,4 +9,4 @@
 <br>
 
 ## Step 2: Deploy this App Through AWS CodePipeline
-- Go [here](https://github.com/sophiagavrila/pipeline-demo/blob/main/how-to-deploy/aws-codepipeline.md) for a step-by-step guide on how to deploy this app (or any Spring Boot App) to a Docker container within AWS ELastic Beanstalk via a CI/CD pipeline.
+- Go [here](https://github.com/sophiagavrila/pipeline-demo/blob/main/how-to-deploy/aws-codepipeline.md) for a step-by-step guide on how to deploy this app (or any Spring Boot App) to a Docker container within AWS Elastic Beanstalk via a CI/CD pipeline.
