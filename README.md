@@ -1,6 +1,8 @@
 # How to Deploy this App
 *The purpose of this repository is to provide a base Spring Boot Java 8 project and guides to set up **Sonar Cloud** and an **AWS CodePipeline** to facilitate CI/CD.*
 
+<br>
+
 ## Step 1: Setup Sonar Cloud
 - Go [here]() for a SonarCloud setup guide.
 
