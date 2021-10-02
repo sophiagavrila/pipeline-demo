@@ -4,9 +4,9 @@
 <br>
 
 ## Step 1: Setup Sonar Cloud
-- Go [here]() for a SonarCloud setup guide.
+- Go [here](https://github.com/sophiagavrila/pipeline-demo/blob/main/how-to-deploy/sonar-cloud.md) for a SonarCloud setup guide.
 
 <br>
 
 ## Step 2: Deploy this App Through AWS CodePipeline
-- Go [here]() for a step-by-step guide on how to deploy this app (or any Spring Boot App) to a Docker container within AWS ELastic Beanstalk via a CI/CD pipeline.
+- Go [here](https://github.com/sophiagavrila/pipeline-demo/blob/main/how-to-deploy/aws-codepipeline.md) for a step-by-step guide on how to deploy this app (or any Spring Boot App) to a Docker container within AWS ELastic Beanstalk via a CI/CD pipeline.
