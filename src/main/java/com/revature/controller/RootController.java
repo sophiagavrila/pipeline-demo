@@ -8,11 +8,10 @@ import org.springframework.web.servlet.view.RedirectView;
 
 /*
  * This RootController dictates what view will be displayed upon start up
- * You can find this view after running the app > go to http://localhost:5000
+ * You can find this view after running the app > go to http://localhost:5000/api/docs
  */
 @Controller
 public class RootController {
-
 	
 	@GetMapping("/docs") // find all Swagger API docs at http://host:5000/api/docs
 	@ResponseStatus(HttpStatus.SEE_OTHER)
