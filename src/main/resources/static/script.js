@@ -1,15 +1,17 @@
 // declare the url which is our detination for the fetch request
-const url = `http://localhost:5000/api/users/add`
-
-
+const url = window.location.origin + ('/api');
 
 let btn = document.getElementById('btn');
 btn.addEventListener("click", addUser);
+
+console.log(url);
 
 
 // send the POST request with fetch() inside a method
 
 function addUser() {
+	
+	const postUrl = url + "/users/add";
 
     // Build a user object from the input fields by querying the DOM
     let ifirstName = document.getElementById('firstName').value
@@ -48,7 +50,7 @@ function addUser() {
     })
 
 
-    fetch(url, options)
+    fetch(postUrl, options)
         .then(res => res.json())
         .then(res => console.log(res))
 }
