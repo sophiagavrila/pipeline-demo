@@ -8,8 +8,7 @@ const url = window.location.origin + ('/api');
 let btn = document.getElementById('btn');
 btn.addEventListener("click", addUser);
 
-console.log(url);
-
+console.log(url); // check that our url is http://<host-server>:5000/api
 
 // send the POST request with fetch() inside a method
 
