@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.RedirectView;
 public class RootController {
 
 	
-	@GetMapping
+	@GetMapping("/docs") // find all Swagger API docs at http://host:5000/api/docs
 	@ResponseStatus(HttpStatus.SEE_OTHER)
 	public RedirectView redirectViewToApiDocumentation() {
 		return new RedirectView("swagger-ui/index.html");
