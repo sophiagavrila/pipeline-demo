@@ -54,27 +54,7 @@ ENTRYPOINT ["java", "-jar", "/YourApp-0.0.1-SNAPSHOT.jar"]
 
 <br>
 
-2. Right click on the root directory of your project again and create another file called `docker-compose.yml`.  Paste the following within it:
-
-<br>
-
-```Dockerfile
-version: "1.0"
-services:
-  api_service:
-    build: .
-    restart: always
-    ports:
-      - 5000:5000
-```
-
-<br>
-
-> ***How is the `docker-compose.yml` file used?*** *The Compose file defines your services by providing a way to document and configure all of the application's service dependencies (databases, queues, caches, web service APIs, etc).  Currently we only have one, without additional services like a postgres databse. The `api_service` (your app)  uses an image that’s built from the `Dockerfile` in the current directory. It then binds the container and the host machine to the exposed port, 5000.*
-
-<br>
-
-3. Richt click on your project and create one more file named `buildspec.yml` within the project root directory. Paste the following within:
+2. Right click on your project and create one more file named `buildspec.yml` within the project root directory. Paste the following within:
 
 ```yml
 version: 0.2
@@ -96,7 +76,7 @@ artifacts:
 
 <br>
 
-4. You're all done with your source code now. Time to `git push` it to your GitHub repository. :up:
+3. You're all done with your source code now. Time to `git push` it to your GitHub repository. :up:
 
 <br>
 
