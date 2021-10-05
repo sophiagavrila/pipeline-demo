@@ -49,7 +49,7 @@ public class UserService {
 	@Transactional(readOnly=true)
 	public User findById(int id) {
 
-		return userDAO.findById(id).orElseThrow(() -> new UserNotFoundException("No user found with id " + id));
+		return userDAO.findById(id);
 	}
 	
 	// we want to make sure that this method may only READ from the DB

@@ -31,5 +31,7 @@ public interface UserDAO extends JpaRepository<User, Integer>{
 	
 	public void deleteById(int id);
 	
+	public User findById(int id);
+	
 	// basic CRUD methods inherited from CrudRepository save(), get(), update(), etc...
 }

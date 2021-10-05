@@ -44,7 +44,7 @@ public class UserController {
     }
 	
 	// insert
-	@PostMapping("/add")
+	@PostMapping("/add") // http://localhost:5000/api/users/add
 	public ResponseEntity<User> insert(@Valid @RequestBody User u) {
 
 		return ResponseEntity.ok(userService.insert(u));	
@@ -57,7 +57,7 @@ public class UserController {
 
 	}
 	
-	
+	// remove all h2 records
 	
 	
 	
