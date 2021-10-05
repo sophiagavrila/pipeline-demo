@@ -13,7 +13,7 @@ This document wil guide you through setting up a DevOps pipeline using AWS CodeP
 <br>
 
 ## Outline:
-- [Step 1: Setup `Dockerfile`, `docker-compose.yml`, & `buildspec.yml` in source code](#step1)
+- [Step 1: Setup `Dockerfile`, & `buildspec.yml` in source code](#step1)
 
 - [Step 2: Setup Deployment Environment in Elastic Beanstalk](#step2)
 - [Step 3: Add Source Stage - Connect GitHub to CodePipeline](#step3)
