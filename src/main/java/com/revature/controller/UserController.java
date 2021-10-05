@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,7 +39,7 @@ public class UserController {
 	}
 	
     @GetMapping("/{id}")
-    public User getFood(@PathVariable int id) {
+    public User findUserById(@PathVariable int id) {
         return userService.getById(id);
     }
 	
@@ -46,7 +47,21 @@ public class UserController {
 	@PostMapping("/add")
 	public ResponseEntity<User> insert(@Valid @RequestBody User u) {
 
-		return ResponseEntity.ok(userService.insert(u));
+		return ResponseEntity.ok(userService.insert(u));	
+	}
+
+	@DeleteMapping("/{id}")
+	public void removeUser(@PathVariable("id") int id) {
 		
-	} 
+		userService.remove(id);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
